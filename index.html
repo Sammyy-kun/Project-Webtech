@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="landingPage.css" />
+</head>
+<style>
+.portal-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.portal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.portal-icon {
+    font-size: 48px;
+    color:#6256CA;
+}
+.portal-title {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    color:black;
+}
+    </style>
+<main>
+<header>
+<!--Navigation Bar-->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#ffffff;">
+    <div class="container px-4">
+      <a class="navbar-brand" href="/">
+        <span style="color:#6256CA; font-size:26px; font-weight:bold; letter-spacing: 1px;">Codify</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-black" href="index.php">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-black" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link text-black" href="#">Roles</a></li>
+        </ul>
+      </div>
+      </div>
+   </nav>
+<!--Navigation Bar-->
+</header>
+
+<main>
+<!--Landing Page Content-->
+<div class="container mt-5">
+    <div class="row align-items-center">
+        <div class="col-md-6 order-md-2 order-1">
+            <img src="Pictures/4170461.jpg" alt="Attendance System" class="img-fluid">
+        </div>
+        <div class="col-md-6 order-md-1 order-2">
+            <h5 class="colored-last-word display-4 title" style="font-weight:bold;">
+                Welcome to <span class="last-word">Codify</span> <!-- Title here -->
+            </h5>
+            <p class="lead justified-paragraph subHeading">
+                Say Goodbye to Attendance Sheets! Simplify event check-ins and classroom roll calls with our QR code solution 
+                - fast, efficient, and hassle-free!
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--About Section-->
+<div class="container-fluid mt-5" style="background-color: #ddd;">
+    <div class="row">
+       <div class="col">
+           <div class="about-section p-5">
+                <h2 class="text-center aboutTitle">About</h2>
+                <p class="description">
+                  Our QR-based attendance system is designed to streamline the attendance 
+                  process for students, teachers, and event organizers. Whether it's a classroom, seminar, or school event, this system allows users to generate a unique QR code that can be scanned by participants to instantly log their presence.
+                  This eliminates the need for paper-based records or manual roll calls, 
+                  saving time and reducing errors. The data is securely stored and can be 
+                  accessed in real-time, giving admins a clear view of who attended the session.
+                </p>
+           </div>
+       </div>
+    </div>
+</div>
+
+<!--Role Section-->
+<div class="container text-center mt-5 mb-5">
+    <h2 class="mb-5">Select Role</h2>
+    <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <a href="studentLogin.php" class="text-decoration-none"> 
+                <div class="portal-card">
+                    <i class="portal-icon bi bi-laptop"></i>
+                    <h3 class="portal-title">Student</h3>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4">
+            <a href="profLogin.php" class="text-decoration-none"> 
+                <div class="portal-card">
+                    <i class="portal-icon bi bi-pencil"></i>
+                    <h3 class="portal-title">Teacher</h3>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4">
+            <a href="profLogin.php" class="text-decoration-none"> 
+                <div class="portal-card">
+                    <i class="portal-icon bi bi-gear"></i>
+                    <h3 class="portal-title">Admin</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
